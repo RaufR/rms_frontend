@@ -30,7 +30,7 @@
 			$('.sales-title').text('Sales + Tax');
 			if( chart ) {
 				chart.data.datasets[0].data = [13000, 27200, 31500, 56000, 36000, 45655];
-				chart.data.datasets[1].data = [7502, 3350, 2800, 9200, 800, 1050];
+				chart.data.datasets[1].data = [17502, 21200, 2800, 9200, 800, 1050];
 				chart.update();
 			}
 		} else {
@@ -38,7 +38,7 @@
 			$('.sales-title').text('Sales');
 			if( chart ) {
 				chart.data.datasets[0].data = [12000, 26200, 30500, 55000, 35000, 41655];
-				chart.data.datasets[1].data = [6502, 2350, 1800, 1200, 700, 950];
+				chart.data.datasets[1].data = [17000, 20200, 1800, 1200, 700, 950];
 				chart.update();
 			}
 		}
@@ -80,7 +80,7 @@
 					label: 'Costs',
 					data: [1650, 2350, 1800, 1200, 700, 950],
 					backgroundColor: [
-						'rgba(255, 99, 45, 0.2)'
+						'rgba( 175, 86, 58, 0.2)'
 					],
 					borderColor: [
 						'rgba(255,99,45,1)'
