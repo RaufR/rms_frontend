@@ -218,9 +218,9 @@ label {
 	bottom: 0;
 	z-index: 20;
 	background: #2d2a38;
-	background: -webkit-linear-gradient(to top, #2d2a38, #484848);
-	background: -moz-linear-gradient(to top, #2d2a38, #484848);
-	background: linear-gradient(to top, #2d2a38, #484848);
+	background: -webkit-linear-gradient(to top, #17252a, #3aa5a9);
+	background: -moz-linear-gradient(to top,#17252a, #3aa5a9);
+	background: linear-gradient(to top, #17252a, #3aa5a9);
 	width: 220px;
 }
 
