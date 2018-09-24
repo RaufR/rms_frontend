@@ -1,0 +1,617 @@
+/*==============================
+-- Table of contents
+================================
+
+0. Basic
+1. Header
+2. Side nav
+3. Widgets
+4. Form Elements
+5. Tables
+
+==============================*/
+
+/**
+ * 0. Basic
+ */
+ body {
+ 	padding-top: 75px;
+ 	padding-left: 220px;
+	transition: padding ease 0.25s;
+ }
+
+.material-icons {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+label {
+	cursor: pointer;
+}
+
+/**
+ * 1. Header
+ */
+#top-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	z-index: 10;
+	height: 75px;
+ 	padding-left: 250px;
+ 	padding-right: 30px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
+}
+
+#top-header .page-title {
+	margin: 0;
+	padding-right: 15px;
+	font-size: 24px;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+#top-header .search-bar {
+	width: auto;
+	flex-wrap: nowrap;
+}
+
+#top-header .search-bar input {
+	border: 1px solid #e0e0e0;
+	padding: 0 15px;
+	height: 40px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	width: 100%;
+}
+
+#top-header .search-bar button {
+	height: 40px;
+	line-height: 38px;
+	width: 40px;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	border-left: none;
+	background: no-repeat;
+	cursor: pointer;
+	font-size: 21px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#top-header .filter-menu {
+	padding-left: 15px;
+	position: relative;
+}
+
+#top-header .filter-menu .opener {
+	width: 50px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#top-header .filter-menu .filter-popup {
+	position: absolute;
+	background: #fff;
+	padding: 15px;
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.45) 0 1px 6px -2px;
+	right: 0;
+	top: 100%;
+	width: 135px;
+	transform-origin: top right;
+	transition: all ease 0.25s;
+	transform: scale(0);
+}
+
+#top-header .filter-menu .filter-popup.open {
+	transform: none;
+}
+
+#top-header .filter-menu .filter-popup label {
+	color: #505050;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+	cursor: pointer;
+	display: block;
+}
+
+#top-header .time {
+	margin-right: 0;
+	margin-left: auto;
+	padding-right: 15px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #4485ff;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+#top-header .time i {
+	margin-right: 5px;
+}
+
+#top-header .action-buttons {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#top-header .time + .action-buttons {
+	margin-left: 0;
+}
+
+#top-header .action-buttons .btn-group .btn {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header-addon {
+	position: fixed;
+	background: #fff;
+	padding-left: 220px;
+	left: 0;
+	right: 0;
+	top: 75px;
+	z-index: 9;
+	border-top: 1px solid #efefef;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
+}
+
+.header-addon .left-menu {
+	float: left;
+}
+
+.header-addon .right-menu {
+	float: right;
+}
+
+.header-addon ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header-addon ul li {
+	float: left;
+	position: relative;
+}
+
+.header-addon ul li a {
+	padding: 0 25px;
+	display: block;
+	font-weight: 400;
+	color: #3d4044;
+	position: relative;
+	background: #fff;
+	line-height: 50px;
+}
+
+.header-addon ul li:hover a, .header-addon ul li.active a {
+	color: #4485ff;
+}
+
+.header-addon ul li.active:before, .header-addon ul li.active:after {
+	content: "";
+	position: absolute;
+	border: 10px solid transparent;
+	border-top-color: #fff;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	z-index: -1;
+}
+
+.header-addon ul li.active:after {
+	border-top-color: rgba(0, 0, 0, 0.15);
+	z-index: -3;
+	filter: blur(2px);
+}
+
+/**
+ * 2. Side nav
+ */
+#side-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 20;
+	background: #2d2a38;
+	background: -webkit-linear-gradient(to top, #2d2a38, #484848);
+	background: -moz-linear-gradient(to top, #2d2a38, #484848);
+	background: linear-gradient(to top, #2d2a38, #484848);
+	width: 220px;
+}
+
+#side-nav .logo-area {
+	height: 75px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#side-nav .logo-area .logo {
+	margin: 0;
+	color: #fff;
+	padding: 0 25px;
+	line-height: 75px;
+	font-size: 22px;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+.collapsed-menu #side-nav .logo-area .logo,
+#side-nav .logo-area .collapsed-logo {
+	opacity: 0;
+	visibility: hidden;
+	padding-left: 50px;
+}
+
+.collapsed-menu #side-nav .logo-area .collapsed-logo {
+	opacity: 1;
+	visibility: visible;
+	padding-left: 0;
+}
+
+#side-nav .logo-area .collapsed-logo {
+	color: #fff;
+	line-height: 75px;
+	width: 75px;
+	text-align: center;
+	font-size: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#top-header,
+.header-addon,
+#side-nav .logo-area .logo,
+#side-nav .logo-area .collapsed-logo {
+	transition: all ease 0.25s;
+}
+
+#side-nav .main-nav {
+
+}
+
+#side-nav .main-nav ul {
+	list-style: none;
+	padding: 15px 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+
+#side-nav .main-nav ul li {
+	display: block;
+	padding: 3px 4px;
+	position: relative;
+}
+
+#side-nav .main-nav ul li a {
+	display: block;
+	text-align: left;
+	margin: 0;
+	color: #fff;
+	padding: 12px 22px;
+	padding-right: 40px;
+	overflow: hidden;
+}
+
+#side-nav .main-nav ul li.active > a,
+#side-nav .main-nav ul li a:hover {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+#side-nav .main-nav ul li a i {
+	margin-right: 12px;
+	font-size: 24px;
+}
+
+#side-nav .main-nav ul li .badge {
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	padding: 5px 9px;
+	background: #fb2121;
+	pointer-events: none;
+}
+
+.collapsed-menu,
+.collapsed-menu .header-addon {
+	padding-left: 75px;
+}
+
+.collapsed-menu #side-nav {
+	width: 75px;
+}
+
+.collapsed-menu #top-header {
+	padding-left: 105px;
+}
+
+.collapsed-menu #side-nav .main-nav ul li .badge {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.collapsed-menu #side-nav .main-nav ul li a i {
+	margin-right: 28px;
+	margin-left: 0px;
+}
+
+.collapsed-menu #side-nav .main-nav ul li a.menu-collapse i {
+	transform: rotate(180deg);
+}
+
+#side-nav,
+#side-nav .main-nav ul li .badge,
+#side-nav .main-nav ul li a i {
+	transition: all ease 0.25s;
+}
+
+@media ( max-width: 1000px ) {
+	#side-nav {
+		width: 180px;
+	}
+	body,
+	.header-addon {
+		padding-left: 180px;
+	}
+	#top-header {
+		padding-left: 210px;
+	}
+}
+
+@media ( max-width: 870px ) {
+	#side-nav {
+		width: 75px;
+	}
+	#top-header {
+		padding-left: 105px;
+	}
+	body,
+	.header-addon {
+		padding-left: 75px;
+	}
+	#side-nav .main-nav ul li .badge {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	#side-nav .main-nav ul li a i {
+		margin-right: 28px;
+		margin-left: 0px;
+	}
+
+	#side-nav .main-nav ul li a.menu-collapse i {
+		transform: rotate(180deg);
+	}
+
+	#side-nav .logo-area .logo {
+		opacity: 0;
+		visibility: hidden;
+		padding-left: 50px;
+	}
+
+	#side-nav .logo-area .collapsed-logo {
+		opacity: 1;
+		visibility: visible;
+		padding-left: 0;
+	}
+
+	#top-header .page-title {
+		font-size: 18px;
+	}
+	#top-header .time,
+	#top-header .action-buttons {
+		display: none;
+	}
+}
+
+/**
+ * 3. Widgets
+ */
+#page-area {
+	padding: 30px;
+}
+
+#page-area.has-header-addon {
+	padding-top: 80px;
+}
+
+.widget {
+	margin-bottom: 30px;
+}
+
+.widget .widget-inner {
+	height: 100%;
+	background: #fff;
+	padding: 15px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
+}
+
+.widget .widget-inner .title {
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.widget-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.widget-list li {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #f1f1f1;
+	padding: 10px 0;
+}
+
+.widget-list li h5 {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.widget-list li h5 span {
+
+}
+
+.widget-list li p {
+	margin: 0;
+	color: #47d646;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+.widget-list li .left {
+	float: left;
+}
+
+.widget-list li .right {
+	float: right;
+	text-align: right;
+}
+
+.weekly-sales .widget-inner {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.weekly-sales .title {
+	padding-right: 100px;
+}
+
+.weekly-sales .widget-inner .weekly-sales-chart {
+	height: 100%;
+	min-height: 250px;
+}
+
+.weekly-sales .tax-toggle {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+/**
+ * 4. Form Elements
+ */
+input[type="checkbox"] {
+	background: none;
+	-webkit-appearance: none;
+	display: inline-block;
+	border: 2px solid #3e424a;
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	vertical-align: bottom;
+	margin-right: 6px;
+	transition: all ease 0.25s;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	background: #3e424a;
+	box-shadow: #fff 0 0 0 2px inset;
+}
+
+/**
+ * 5. Tables
+ */
+.data-list {
+	width: 100%;
+	background: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
+}
+
+.data-list a {
+	color: #4485ff;
+}
+
+.data-list thead {
+	background: #f5f5f5;
+	text-transform: uppercase;
+}
+
+.data-list th, .data-list td {
+	padding: 10px 15px;
+}
+
+.data-list .item-ticker label {
+	display: block;
+	margin: 0;
+	height: 100%;
+	text-align: center;
+	padding: 14px 15px;
+}
+
+.data-list .item-ticker label input {
+	margin: 0;
+}
+
+.data-list tbody tr {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.data-list .item-ticker {
+	width: 35px;
+	padding: 0;
+}
+
+.data-list .item-code,
+.data-list .item-category {
+	width: 60px;
+}
+
+.data-list .item-released {
+	width: 110px;
+}
+.data-list .item-price {
+	width: 80px;
+}
+
+.data-list .item-title a {
+	display: table;
+}
+
+.data-list .item-title a img {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.data-list .item-title a .title {
+	padding-left: 10px;
+	color: inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.data-list .item-variants .variant {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.data-list .item-variants .variant a {
+	display: block;
+}
+
+.data-list tbody .item-variants {
+	padding: 5px 10px;
+}
+
+.data-pagination {
+	background: #fff;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
+}
+
+.data-pagination .pagination {
+	justify-content: flex-end;
+	margin: 0;
+}
