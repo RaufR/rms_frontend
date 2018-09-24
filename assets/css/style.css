@@ -101,7 +101,7 @@ label {
 	box-shadow: rgba(0, 0, 0, 0.45) 0 1px 6px -2px;
 	right: 0;
 	top: 100%;
-	width: 135px;
+	width: max-content;
 	transform-origin: top right;
 	transition: all ease 0.25s;
 	transform: scale(0);
@@ -217,11 +217,12 @@ label {
 	top: 0;
 	bottom: 0;
 	z-index: 20;
+	overflow-y: scroll;
 	background: #2d2a38;
 	background: -webkit-linear-gradient(to top, #17252a, #3aa5a9);
 	background: -moz-linear-gradient(to top,#17252a, #3aa5a9);
 	background: linear-gradient(to top, #17252a, #3aa5a9);
-	width: 220px;
+	width: 17%;
 }
 
 #side-nav .logo-area {
@@ -541,6 +542,7 @@ input[type="checkbox"]:checked {
 
 .data-list th, .data-list td {
 	padding: 10px 15px;
+	width: 60px;
 }
 
 .data-list .item-ticker label {
