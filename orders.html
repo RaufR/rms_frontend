@@ -18,7 +18,7 @@
 
 <header id="top-header">
 
-    <h2 class="page-title">Customer List..</h2>
+    <h2 class="page-title">Invoice Details..</h2>
 
     <div class="search-bar input-group">
         <input type="search" class="ghost-placeholder" placeholder="Customer List...">
@@ -72,10 +72,10 @@
             <li>
                 <a href="reports.html" class="btn btn-link"><i class="material-icons">multiline_chart</i>Reports</a>
             </li>
-            <li class="active">
+            <li >
                 <a href="contacts.html" class="btn btn-link"><i class="material-icons">account_box</i>Contacts</a> <span class="badge">3</span>
             </li>
-            <li>
+            <li class="active">
                 <a href="orders.html" class="btn btn-link"><i class="material-icons">add_shopping_cart</i>Orders</a>
             </li>
             <li>
@@ -106,136 +106,155 @@
 <div id="page-area" class="has-header-addon">
     <div class="header-addon">
         <ul class="left-menu">
-            <li class="active"><a href="#">Customers</a></li>
-            <li ><a href="#">Suppliers</a></li>
-            <li><a href="#">Sales Persons</a></li>
+            <li class="active"><a href="#">Customer Invoice</a></li>
+            <li ><a href="#">Supplier Bills</a></li>
+            <li><a href="#">Estimate</a></li>
         </ul><!-- .left-menu -->
         <ul class="right-menu">
             <li><a href="#"><i class="fa fa-bars"></i></a></li>
         </ul><!-- .right-menu -->
     </div><!-- .header-addon -->
-    <table class="data-list">
+    <table class="data-list table-condensed table-bordered table-responsive-lg table-hover" >
         <thead>
         <tr>
             <th class="item-ticker"><label><input type="checkbox" class="tick-all"></label></th>
-            <th class="item-title">Name</th>
-            <th class="item-code">Code</th>
-            <th class="item-category">Phone</th>
-            <th class="item-variants">Mobile</th>
-            <th class="item-price">Email</th>
-            <th class="item-released">Location</th>
+            <th class="item-title">Outlet</th>
+            <th class="item-code">number</th>
+            <th class="item-category">Customer</th>
+            <th class="item-variants">Date</th>
+            <th class="item-price">Sales+TAX</th>
+            <th class="item-released">Due</th>
+            <th class="item-price">Payment</th>
+            <th class="item-price">Delivery</th>
+            <th class="item-price">Action</th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+                <a href="#"><span class="title">Boston1</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50$</td>
+            <td class="item-released">-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">Rauf Rahman</span></a>
+                <a href="#"><span class="title">Prague3</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15875</td>
-            <td class="item-category">+45564452</td>
-            <td class="item-variants">+545125252</td>
-            <td class="item-price">rauf@gmail.com</td>
-            <td class="item-released">Prague, Czech Republic</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">513.50€</td>
+            <td class="item-released">-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: darkred"> Not Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">Refat Alam</span></a>
+                <a href="#"><span class="title">London1</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">18952</td>
-            <td class="item-category">+656282230</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">refat@gmail.com</td>
-            <td class="item-released">Chittagong, Bangladesh</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50£</td>
+            <td class="item-released">-</td>
+            <td style="color: darkred"> Not Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">Tuhin Houque</span></a>
+                <a href="#"><span class="title">Dhaka7</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">48451213</td>
-            <td class="item-category">+88055656565</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">tuhin@gmail.com</td>
-            <td class="item-released">Khulna, Bangladesh</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50/-</td>
+            <td class="item-released">25.00/-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">Kamil Dusak</span></a>
+                <a href="#"><span class="title">Delhi6</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">++420585665</td>
-            <td class="item-variants">+556565</td>
-            <td class="item-price">kamil@gmail.com</td>
-            <td class="item-released">Prague, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50 INR</td>
+            <td class="item-released">25.00 INR</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+                <a href="#"><span class="title">Dhaka7</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50/-</td>
+            <td class="item-released">25.00/-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+                <a href="#"><span class="title">Dhaka7</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50/-</td>
+            <td class="item-released">25.00/-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+                <a href="#"><span class="title">Dhaka7</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50/-</td>
+            <td class="item-released">25.00/-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
             <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+                <a href="#"><span class="title">Dhaka7</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">18.9.01</td>
+            <td class="item-category">Lee jordan</td>
+            <td class="item-variants">25 Sep 2017</td>
+            <td class="item-price">213.50/-</td>
+            <td class="item-released">25.00/-</td>
+            <td style="color: #3aafa9"> Paid</td>
+            <td style="color: #3aafa9"> Sent</td>
+            <td><button class="btn btn-round btn-outline-info ">print</button></td>
         </tr>
         </tbody>
     </table><!-- .data-list -->

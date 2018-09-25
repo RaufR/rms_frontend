@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport" />
+
+	<title>Sell</title>
+
+	<!-- Fonts and icons -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link href="./assets/css/material-kit.css" rel="stylesheet" />
+	<link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<header id="top-header">
+
+		<h2 class="page-title">New Sales Order</h2>
+
+		<div class="search-bar input-group">
+			<input type="search" class="ghost-placeholder" placeholder="Search Product..">
+			<button type="submit"><i class="material-icons">search</i></button>
+		</div><!-- .search-bar -->
+
+		<div class="filter-menu">
+			<a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
+			<div class="filter-popup">
+				<label><input type="checkbox"> Sales</label>
+				<label><input type="checkbox"> Reversal</label>
+			</div><!-- .filter-popup -->
+		</div><!-- .filter-menu -->
+
+		<div class="action-buttons">
+			<div class="dropdown online-status" role="group" aria-label="...">
+				<button class="btn btn-primary status-btn status-online" data-toggle="dropdown">
+					<span class="status"><i class="fa fa-circle"></i> Online</span>
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item status-offline" href="#"><i class="fa fa-minus"></i> Offline</a>
+				</div><!-- .dropdown-menu -->
+			</div><!-- .dropdown -->
+		</div><!-- .action-buttons -->
+
+	</header><!-- #top-header -->
+
+	<nav id="side-nav">
+		<div class="logo-area">
+			<h4 class="logo">SolserSoft</h4>
+			<h3 class="logo">BMS</h3>
+			<div class="collapsed-logo"><i class="material-icons">star</i></div>
+		</div><!-- .logo-area -->
+		<div class="main-nav">
+			<ul>
+				<li>
+					<a href="index.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
+				</li>
+				<li>
+					<a href="products.html" class="btn btn-link"><i class="material-icons">archive</i>Products</a></li>
+				<li class="active">
+					<a href="sell.html" class="btn btn-link"><i class="material-icons">pie_chart</i>Sell</a></li>
+				<li>
+					<a href="reports.html" class="btn btn-link"><i class="material-icons">multiline_chart</i>Reports</a>
+				</li>
+				<li>
+					<a href="contacts.html" class="btn btn-link"><i class="material-icons">account_box</i>Contacts</a> <span class="badge">3</span>
+				</li>
+				<li>
+					<a href="orders.html" class="btn btn-link"><i class="material-icons">add_shopping_cart</i>Orders</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">monetization_on</i>Payment</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">attach_money</i>DEBT</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">local_grocery_store</i>Inventory</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">settings</i>Adjustment</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">shopping_cart</i>Buy</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link"><i class="material-icons">redeem</i>Promotion</a>
+				</li>
+				<li>
+					<a href="#" class="btn btn-link menu-collapse"><i class="material-icons">chevron_left</i>Collapse</a>
+				</li>
+			</ul>
+		</div><!-- .main-nav -->
+	</nav><!-- #side-nav -->
+
+	<div id="page-area" class="has-header-addon">
+		<div class="header-addon">
+			<ul class="left-menu">
+				<li>
+					<div class="icon-input">
+						<label>
+							<i class="fa fa-home"></i>
+							<input type="text" placeholder="Outlet" class="ghost-placeholder">
+						</label>
+					</div><!-- .icon-input -->
+				</li>
+				<li>
+					<div class="icon-input">
+						<label>
+							<i class="fa fa-calendar-check-o"></i>
+							<input type="date">
+						</label>
+					</div><!-- .icon-input -->
+				</li>
+				<li>
+					<div class="icon-input">
+						<label>
+							<i class="fa fa-hashtag"></i>
+							<input type="text" placeholder="18.09.040" class="ghost-placeholder">
+						</label>
+					</div><!-- .icon-input -->
+				</li>
+				<li>
+					<div class="icon-input">
+						<label>
+							<i class="fa fa-user"></i>
+							<input type="text" placeholder="Customer" class="ghost-placeholder">
+							<a href="#"><i class="fa fa-plus-circle"></i></a>
+						</label>
+					</div><!-- .icon-input -->
+				</li>
+				<li>
+					<div class="icon-input">
+						<label>
+							<i class="fa fa-address-book"></i>
+							<select name="" id="">
+								<option disabled="disabled" selected="selected">Sales Person</option>
+								<option>Sales Person 1</option>
+								<option>Sales Person 2</option>
+								<option>Sales Person 3</option>
+								<option>Sales Person 4</option>
+							</label>
+						</select>
+					</div><!-- .icon-input -->
+				</li>
+			</ul><!-- .left-menu -->
+			<ul class="right-menu">
+				<li><a href="#"><i class="fa fa-bars"></i></a></li>
+			</ul><!-- .right-menu -->
+		</div><!-- .header-addon -->
+		<div class="row">
+			<div class="col-md-5 widget widget-products">
+				<div class="widget-inner">
+					<div class="dropdown product-cat-dropdown" role="group">
+						<button class="btn" style="background-color: #17252a" data-toggle="dropdown">
+							<span class="category">Men Products</span>
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-menu nav dropdown-menu-right">
+							<a class="dropdown-item active" data-toggle="tab" href="#men-products">Men Products</a>
+							<a class="dropdown-item" data-toggle="tab" href="#women-products">Women Products</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" data-toggle="tab" href="#food-products">Foods</a>
+							<a class="dropdown-item" data-toggle="tab" href="#drink-products">Drinks</a>
+						</div><!-- .dropdown-menu -->
+					</div><!-- .dropdown -->
+					<div class="tab-content tab-space">
+						<div class="tab-pane" id="food-products">
+							<div class="product-grid">
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/burger.jpg" alt="">
+										<span class="title">Burger</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/hot-dog.jpg" alt="">
+										<span class="title">Hot Dog</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/sandwitch.jpg" alt="">
+										<span class="title">Sandwitch</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/burger.jpg" alt="">
+										<span class="title">Burger</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/hot-dog.jpg" alt="">
+										<span class="title">Hot Dog</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/sandwitch.jpg" alt="">
+										<span class="title">Sandwitch</span>
+									</a>
+								</div><!-- .product -->
+							</div><!-- .product-grid -->
+						</div><!-- .tab-pane -->
+						<div class="tab-pane" id="drink-products">
+							<div class="product-grid">
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coca-cola.jpg" alt="">
+										<span class="title">Coca Cola</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coffee.jpg" alt="">
+										<span class="title">Coffee</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coca-cola.jpg" alt="">
+										<span class="title">Coca Cola</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coffee.jpg" alt="">
+										<span class="title">Cold Coffee</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coca-cola.jpg" alt="">
+										<span class="title">Coca Cola Diet</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/coffee.jpg" alt="">
+										<span class="title">Coffee</span>
+									</a>
+								</div><!-- .product -->
+							</div><!-- .product-grid -->
+						</div><!-- .tab-pane -->
+						<div class="tab-pane active" id="men-products">
+							<div class="product-grid">
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt XXL</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-2.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt D</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-2.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-2.jpg" alt="">
+										<span class="title">T-Shirt A</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/t-shirt-2.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+							</div><!-- .product-grid -->
+						</div><!-- .tab-pane -->
+						<div class="tab-pane" id="women-products">
+							<div class="product-grid">
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-2.jpg" alt="">
+										<span class="title">Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-2.jpg" alt="">
+										<span class="title">Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-1.jpg" alt="">
+										<span class="title">T-Shirt</span>
+									</a>
+								</div><!-- .product -->
+								<div class="product">
+									<a href="#">
+										<img src="assets/img/female-shirt-2.jpg" alt="">
+										<span class="title">Shirt</span>
+									</a>
+								</div><!-- .product -->
+							</div><!-- .product-grid -->
+						</div><!-- .tab-pane -->
+					</div><!-- .tab-content -->
+				</div><!-- .widget-inner -->
+			</div><!-- .widget -->
+			<div class="col-md-7 widget widget-cart">
+				<div class="widget-inner">
+					<div class="cart-root">
+						<div class="cart-header">
+							<h5 class="current-sale"><i class="fa fa-shopping-cart"></i> Current Sale <span class="number">(0)</span></h5>
+							<div class="search-products">
+								<label>
+									<i class="fa fa-barcode"></i>
+									<input type="text" class="ghost-placeholder" placeholder="Search products by name / code">
+								</label>
+								<div class="dropdown-menu dropdown-menu-right search-results-viewer">
+									<span class="dropdown-item empty">No products found</span>
+								</div><!-- .dropdown-menu -->
+							</div><!-- .search-products -->
+						</div><!-- .cart-header -->
+						<div class="cart-body">
+							<table class="cart-table">
+								<thead>
+									<tr>
+										<th class="remove-product"></th>
+										<th class="item-name">Name</th>
+										<th class="item-code">Code</th>
+										<th class="item-qty">QTY</th>
+										<th class="item-price">Price</th>
+										<th class="item-total">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr><td colspan="6" class="empty"></td></tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="4"></td>
+										<td class="total-title">Amount</td>
+										<td class="total-amount">0</td>
+									</tr>
+								</tfoot>
+							</table><!-- .cart-table -->
+						</div><!-- .cart-body -->
+						<div class="cart-footer">
+							<div class="cart-footer-row">
+								<label>
+									<i class="fa fa-tags"></i>
+									<select name="" id="">
+										<option disabled="disabled" selected="selected">No Tax</option>
+										<option>Value Added Tax</option>
+										<option>Tax Only</option>
+									</select>
+								</label>
+								<button class="btn btn-sm" style="background-color: #17252a"><i class="fa fa-tags"></i> Discount</button>
+							</div><!-- .cart-footer-row -->
+							<div class="cart-footer-row equal">
+								<button class="btn  btn-lg" style="background-color: #2b7a78;><i class="fa fa-truck"></i> Shipping</button>
+								<button class="btn btn-lg" style="background-color: #2b7a78"><i class="fa fa-file"></i> Note</button>
+								<button class="btn  btn-lg btn-warning clear-cart"><i class="fa fa-times"></i> Clear</button>
+								<button class="btn btn-success btn-lg pay-btn" disabled="disabled"><i class="fa fa-check"></i> Pay <span class="total-amount"></span></button>
+							</div><!-- .cart-footer-row -->
+						</div><!-- .cart-footer -->
+					</div><!-- .cart-root -->
+				</div><!-- .widget-inner -->
+			</div><!-- .widget -->
+		</div><!-- .row -->
+	</div><!-- #page-area -->
+
+	<!--   Core JS Files   -->
+	<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+	<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+	<script src="./assets/js/plugins/moment.min.js"></script>
+	<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+	<script src="./assets/js/material-kit.js" type="text/javascript"></script>
+	<script src="./assets/js/Chart.bundle.min.js" type="text/javascript"></script>
+	<script src="./assets/js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+
+	<script src="./assets/js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
