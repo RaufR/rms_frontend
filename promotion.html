@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport" />
 
-    <title>DEBT</title>
+    <title>Promotion</title>
 
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -18,23 +18,10 @@
 
 <header id="top-header">
 
-    <h2 class="page-title">Accounts Payable</h2>
-
-    <div class="filter-menu">
-        <a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
-        <div class="filter-popup">
-            <label><button class="btn btn-link dropdown-submenu">Suppliers<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
-            <label><button class="btn btn-link">Employees<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
-            <label><button class="btn btn-link">Customer<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
-            <button style="width: 100%" class="btn btn-outline-success">Search</button>
-        </div><!-- .filter-popup -->
-    </div><!-- .filter-menu -->
+    <h2 class="page-title">Promotion List...</h2>
 
     <div class="action-buttons">
-        <div class="btn-group" role="group" aria-label="...">
-            <button class="btn " style="background-color: #3aafa9"><i class="fa fa-upload"></i> Export</button>
-        </div><!-- .btn-group -->
-        <button class="btn btn-success"> View  Details</button>
+        <button class="btn btn-success btn-lg"><i class="fa fa-plus"></i> Create New Promotion</button>
     </div><!-- .action-buttons -->
 
 </header><!-- #top-header -->
@@ -45,6 +32,8 @@
         <h3 class="logo">BMS</h3>
         <div class="collapsed-logo"><i class="material-icons">store_mall_directory</i></div>
     </div><!-- .logo-area -->
+
+
     <div class="main-nav">
         <ul>
             <li>
@@ -66,10 +55,10 @@
             <li>
                 <a href="payment.html" class="btn btn-link"><i class="material-icons">monetization_on</i>Payment</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="debt.html" class="btn btn-link"><i class="material-icons">attach_money</i>DEBT</a>
             </li>
-            <li>
+            <li >
                 <a href="inventory.html" class="btn btn-link"><i class="material-icons">local_grocery_store</i>Inventory</a>
             </li>
             <li>
@@ -78,7 +67,7 @@
             <li>
                 <a href="delivery.html" class="btn btn-link"><i class="material-icons">shopping_cart</i>Delivery</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="promotion.html" class="btn btn-link"><i class="material-icons">redeem</i>Promotion</a>
             </li>
             <li>
@@ -88,75 +77,67 @@
     </div><!-- .main-nav -->
 </nav><!-- #side-nav -->
 
+
+
 <div id="page-area" class="has-header-addon">
     <div class="header-addon">
         <ul class="left-menu">
-            <li ><a href="#">Account Receivable</a></li>
-            <li class="active"><a href="#">Account Payable</a></li>
+            <li><a href="#">Cupon</a></li>
+            <li class="active" ><a href="#">Promotion</a></li>
+            <li><a href="#">Loyality Sale</a></li>
 
-        </ul><!-- .left-menu -->
-        <ul class="right-menu">
-            <li><a href="#"><i class="fa fa-bars"></i></a></li>
-        </ul><!-- .right-menu -->
+        </ul>
+
     </div><!-- .header-addon -->
-    <table class="data-list table-hover ">
+    <table class="data-list ">
         <thead>
         <tr class="table-primary">
-            <th class="item-title">SUPPLIER</span></th>
-            <th class="item-title">COUNT</span></th>
-            <th class="item-title">iNVOICE</span></th>
-            <th class="item-title">PAID</span></th>
-            <th class="item-title">CREDIT</span></th>
-            <th class="item-title">LIMIT</span></th>
-
+            <th class="item-code">Name </th>
+            <th class="item-title">Minimum Quantity</th>
+            <th class="item-title">Outlet</th>
+            <th class="item-title">Start From</th>
+            <th class="item-title">Action</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="item-price">Rm Warehouse</td>
-            <td class="item-price">5</td>
-            <td class="item-price">24000$</td>
-            <td class="item-price">40000$</td>
-            <td class="item-price">20000$</td>
-            <td class="item-price">0$</td>
+            <td class="item-code">Whole Sale</td>
+            <td class="item-code">20</td>
+            <td class="item-category">Branch A</td>
+            <td class="item-variants">27/6/2018</td>
+            <td><button class="btn btn-outline-danger ">End Promotion</button></td>
         </tr>
         <tr>
-            <td class="item-price">RAFT INC</td>
-            <td class="item-price">115</td>
-            <td class="item-price">345000$</td>
-            <td class="item-price">500000$</td>
-            <td class="item-price">4500$</td>
-            <td class="item-price">5000$</td>
+            <td class="item-code">Christmas Offer</td>
+            <td class="item-code">5</td>
+            <td class="item-category">ALL</td>
+            <td class="item-variants">25/12/2018</td>
+            <td><button class="btn btn-outline-danger ">End Promotion</button></td>
         </tr>
-        <tr >
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td ></td>
-            <td></td>
+        <tr>
+            <td class="item-code">Eid Sale</td>
+            <td class="item-code">5</td>
+            <td class="item-category">ALL</td>
+            <td class="item-variants">12/2/2018</td>
+            <td><button class="btn btn-outline-danger ">End Promotion</button></td>
+        </tr><tr>
+            <td class="item-code">Holy Sale</td>
+            <td class="item-code">5</td>
+            <td class="item-category">ALL</td>
+            <td class="item-variants">27/6/2018</td>
+            <td><button class="btn btn-outline-danger ">End Promotion</button></td>
         </tr>
-        <tr >
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td ></td>
-            <td></td>
+        <tr>
+            <td class="item-code">Black Friday Sale</td>
+            <td class="item-code">10</td>
+            <td class="item-category">Branch A, Branch D</td>
+            <td class="item-variants">01/01/2018</td>
+            <td><button class="btn btn-outline-danger ">End Promotion</button></td>
         </tr>
 
-        <tr class="table-success">
-            <td class="item-price" style="color: green;">Total</td>
-            <td class="item-price" style="color: green;">120</td>
-            <td class="item-price" style="color: green;">36400000$</td>
-            <td class="item-varient" style="color: green;">5040000$</td>
-            <td class="item-released"></td>
-            <td class="item-released" style="color: red;" >5000$</td>
-        </tr>
 
         </tbody>
     </table><!-- .data-list -->
-
 </div><!-- #page-area -->
 
 <!--   Core JS Files   -->

@@ -488,9 +488,9 @@ label {
  */
 #page-area {
 	padding: 30px;
-	width: 85%;
+	width: 100%;
 	float: right;
-	margin-right: 10%;
+
 }
 
 #page-area.has-header-addon {
@@ -945,6 +945,7 @@ input[type="checkbox"]:checked {
 
 .data-list .item-title a {
 	display: table;
+
 }
 
 .data-list .item-title a img {

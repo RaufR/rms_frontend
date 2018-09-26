@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport" />
+
+    <title>inventory</title>
+
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="./assets/css/material-kit.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<header id="top-header">
+
+    <h2 class="page-title">Inventory...</h2>
+
+    <div class="search-bar input-group">
+        <input type="search" class="ghost-placeholder" placeholder="Customer List...">
+        <button type="submit"><i class="material-icons">search</i></button>
+    </div><!-- .search-bar -->
+
+    <div class="filter-menu">
+        <a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
+        <div class="filter-popup">
+            <label><button class="btn btn-link dropdown-submenu">Suppliers<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link">Employees<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link">Customer<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <button style="width: 100%" class="btn btn-outline-success">Search</button>
+        </div><!-- .filter-popup -->
+    </div><!-- .filter-menu -->
+
+
+
+</header><!-- #top-header -->
+
+<nav id="side-nav">
+    <div class="logo-area">
+        <h4 class="logo">SolserSoft</h4>
+        <h3 class="logo">BMS</h3>
+        <div class="collapsed-logo"><i class="material-icons">store_mall_directory</i></div>
+    </div><!-- .logo-area -->
+    <div class="main-nav">
+        <ul>
+            <li>
+                <a href="index.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
+            </li>
+            <li >
+                <a href="products.html" class="btn btn-link"><i class="material-icons">archive</i>Products</a></li>
+            <li>
+                <a href="sell.html" class="btn btn-link"><i class="material-icons">pie_chart</i>Sales</a></li>
+            <li >
+                <a href="reports.html" class="btn btn-link"><i class="material-icons">multiline_chart</i>Reports</a>
+            </li>
+            <li >
+                <a href="contacts.html" class="btn btn-link"><i class="material-icons">account_box</i>Contacts</a> <span class="badge">3</span>
+            </li>
+            <li>
+                <a href="orders.html" class="btn btn-link"><i class="material-icons">add_shopping_cart</i>Orders</a>
+            </li>
+            <li>
+                <a href="payment.html" class="btn btn-link"><i class="material-icons">monetization_on</i>Payment</a>
+            </li>
+            <li>
+                <a href="debt.html" class="btn btn-link"><i class="material-icons">attach_money</i>DEBT</a>
+            </li>
+            <li class="active">
+                <a href="inventory.html" class="btn btn-link"><i class="material-icons">local_grocery_store</i>Inventory</a>
+            </li>
+            <li>
+                <a href="adjustment.html" class="btn btn-link"><i class="material-icons">settings</i>Adjustment</a>
+            </li>
+            <li>
+                <a href="delivery.html" class="btn btn-link"><i class="material-icons">shopping_cart</i>Delivery</a>
+            </li>
+            <li>
+                <a href="promotion.html" class="btn btn-link"><i class="material-icons">redeem</i>Promotion</a>
+            </li>
+            <li>
+                <a href="#" class="btn btn-link menu-collapse"><i class="material-icons">chevron_left</i>Collapse</a>
+            </li>
+        </ul>
+    </div><!-- .main-nav -->
+</nav><!-- #side-nav -->
+
+<div id="page-area" class="has-header-addon">
+    <div class="header-addon">
+        <ul class="left-menu">
+            <li><a href="#">Details</a></li>
+            <li ><a href="#">By Outlet</a></li>
+            <li><a href="#">Count Rank</a></li>
+            <li class="active"><a href="#">Recorder Point(ROP)</a></li>
+            <li><a href="#">On Transit</a></li>
+            <li><a href="#">Available For New Order</a></li>
+
+        </ul><!-- .left-menu -->
+        <ul class="right-menu">
+            <li><a href="#"><i class="fa fa-bars"></i></a></li>
+        </ul><!-- .right-menu -->
+    </div><!-- .header-addon -->
+    <table class="data-list table-hover table-condensed table-bordered">
+        <thead>
+        <tr class="table-primary">
+            <th class="item-code">Rank<span style="margin-left: 3px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></span></th>
+            <th class="item-title">Name<span style="margin-left: 3px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></span></th>
+            <th class="item-category">Code<span style="margin-left: 2px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"> </th>
+            <th class="item-code ">Inventory <span style="margin-left: 2px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></th>
+            <th class="item-price">Total Sold <span style="margin-left: 2px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></th>
+            <th class="item-released">Avialbale<span style="margin-left: 2px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></th>
+            <th class="item-released">Last Purchase<span style="margin-left: 2px" class="fa fa-caret-up"></span><span class="fa fa-caret-down"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="item-code">1</td>
+            <td class="item-code"><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">2</td>
+            <td class=""><a href="#"><span class="title"></span>Apple</a></td>
+            <td class="item-category">1021</td>
+            <td class="item-variants">75</td>
+            <td class="item-price">32</td>
+            <td class="item-released">38</td>
+            <td class="item-released">5/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">3</td>
+            <td class=""><a href="#"><span class="title"></span>Xioami</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">4</td>
+            <td class=""><a href="#"><span class="title"></span>CocaCola</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">1805</td>
+            <td class="item-price">520</td>
+            <td class="item-released">130</td>
+            <td class="item-released">8/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">5</td>
+            <td class=""><a href="#"><span class="title"></span>Intel</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">6</td>
+            <td class=""><a href="#"><span class="title"></span>Nokia</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">7</td>
+            <td class=""><a href="#"><span class="title"></span>Microsoft</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">8</td>
+            <td class=""><a href="#"><span class="title"></span>AWS</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">9</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">10</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">11</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">12</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">13</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+        <tr>
+            <td class="item-code">14</td>
+            <td class=""><a href="#"><span class="title"></span>Samsung</a></td>
+            <td class="item-category">1208</td>
+            <td class="item-variants">120</td>
+            <td class="item-price">52</td>
+            <td class="item-released">13</td>
+            <td class="item-released">2/8/2018</td>
+        </tr>
+
+        </tbody>
+    </table><!-- .data-list -->
+    <nav class="data-pagination">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item.active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul><!-- .pagination -->
+    </nav><!-- .data-pagination -->
+</div><!-- #page-area -->
+
+<!--   Core JS Files   -->
+<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="./assets/js/plugins/moment.min.js"></script>
+<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<script src="./assets/js/material-kit.js" type="text/javascript"></script>
+<script src="./assets/js/Chart.bundle.min.js" type="text/javascript"></script>
+
+<script src="./assets/js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
