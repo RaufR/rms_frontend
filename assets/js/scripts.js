@@ -40,7 +40,7 @@
 			$('.sales-title').text('Sales + Tax');
 			if( chart ) {
 				chart.data.datasets[0].data = [13000, 27200, 31500, 56000, 36000, 45655];
-				chart.data.datasets[1].data = [17502, 21200, 2800, 9200, 800, 1050];
+				chart.data.datasets[1].data = [12500, 15600, 2800, 9200, 800, 10500];
 				chart.update();
 			}
 		} else {
@@ -60,7 +60,7 @@
 
 		chartContainer = $('.weekly-sales-chart');
 
-		if( chartContainer.length < 1 ) {
+		if( chartContainer.length <0 ) {
 			return;
 		}
 
@@ -75,12 +75,12 @@
 		chart = new Chart(context, {
 			type: 'line',
 			data: {
-				labels: ["17 Sep", "18 Sep", "19 Sep", "20 Sep", "21 Sep", "22 Sep"],
+				labels: ["", "18 Sep", "19 Sep", "20 Sep", "21 Sep", "22 Sep"],
 				datasets: [{
 					label: 'Sales',
 					data: [12000, 26200, 30500, 55000, 35000, 41655],
 					backgroundColor: [
-						'rgba(46, 199, 85, 0.25)'
+						'rgba(58, 175, 169, 0.35)'
 					],
 					borderColor: [
 						'rgba(89, 165, 255, 0.85)'
@@ -90,12 +90,12 @@
 					label: 'Costs',
 					data: [1650, 2350, 1800, 1200, 700, 950],
 					backgroundColor: [
-						'rgba( 175, 86, 58, 0.2)'
+						'rgba( 11, 86, 58, 0.2)'
 					],
 					borderColor: [
 						'rgba(255,99,45,1)'
 					],
-					borderWidth: 1
+					borderWidth: 2
 				}]
 			},
 			options: {

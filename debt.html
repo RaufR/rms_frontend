@@ -18,7 +18,7 @@
 
 <header id="top-header">
 
-    <h2 class="page-title">Daily Payment Received</h2>
+    <h2 class="page-title">Accounts Payable</h2>
 
     <div class="filter-menu">
         <a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
@@ -33,13 +33,8 @@
     <div class="action-buttons">
         <div class="btn-group" role="group" aria-label="...">
             <button class="btn " style="background-color: #3aafa9"><i class="fa fa-upload"></i> Export</button>
-            <button class="btn "  style="background-color: #3aafa9" data-toggle="dropdown"><i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Export With Chart</a>
-                <a class="dropdown-item" href="#">Export With details</a>
-            </div><!-- .dropdown-menu -->
         </div><!-- .btn-group -->
-        <button class="btn btn-success"><i class="fa fa-plus"></i> By Outlet</button>
+        <button class="btn btn-success"> View  Details</button>
     </div><!-- .action-buttons -->
 
 </header><!-- #top-header -->
@@ -68,10 +63,10 @@
             <li>
                 <a href="orders.html" class="btn btn-link"><i class="material-icons">add_shopping_cart</i>Orders</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="payment.html" class="btn btn-link"><i class="material-icons">monetization_on</i>Payment</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="debt.html" class="btn btn-link"><i class="material-icons">attach_money</i>DEBT</a>
             </li>
             <li>
@@ -96,9 +91,8 @@
 <div id="page-area" class="has-header-addon">
     <div class="header-addon">
         <ul class="left-menu">
-            <li class="active"><a href="#">Payment Received</a></li>
-            <li ><a href="#">Payment Made</a></li>
-            <li><a href="#">Loyality Points Redemption</a></li>
+            <li ><a href="#">Account Receivable</a></li>
+            <li class="active"><a href="#">Account Payable</a></li>
 
         </ul><!-- .left-menu -->
         <ul class="right-menu">
@@ -108,55 +102,31 @@
     <table class="data-list table-hover ">
         <thead>
         <tr class="table-primary">
-            <th class="item-title">Day</span></th>
-            <th class="item-title">Date</span></th>
-            <th class="item-title">Cash</span></th>
-            <th class="item-title">Card</span></th>
-            <th class="item-title">Total</span></th>
+            <th class="item-title">SUPPLIER</span></th>
+            <th class="item-title">COUNT</span></th>
+            <th class="item-title">iNVOICE</span></th>
+            <th class="item-title">PAID</span></th>
+            <th class="item-title">CREDIT</span></th>
+            <th class="item-title">LIMIT</span></th>
+
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="item-price">Monday</td>
-            <td class="item-price">25th March, 2018</td>
-            <td class="item-price">850$</td>
-            <td class="item-varient">150$</td>
-            <td class="item-released">1000$</td>
+            <td class="item-price">Rm Warehouse</td>
+            <td class="item-price">5</td>
+            <td class="item-price">24000$</td>
+            <td class="item-price">40000$</td>
+            <td class="item-price">20000$</td>
+            <td class="item-price">0$</td>
         </tr>
         <tr>
-            <td class="item-price">Tuesday</td>
-            <td class="item-price">26th March, 2018</td>
-            <td class="item-price">550$</td>
-            <td class="item-varient">-</td>
-            <td class="item-released">550$</td>
-        </tr>
-        <tr>
-            <td class="item-price">Wednesday</td>
-            <td class="item-price">27th March, 2018</td>
-            <td class="item-price">1500$</td>
-            <td class="item-varient">10$</td>
-            <td class="item-released">1510$</td>
-        </tr>
-        <tr>
-            <td class="item-price">Thursday</td>
-            <td class="item-price">28th March, 2018</td>
-            <td class="item-price">850$</td>
-            <td class="item-varient">150$</td>
-            <td class="item-released">1000$</td>
-        </tr>
-        <tr>
-            <td class="item-price">Friday</td>
-            <td class="item-price">29th March, 2018</td>
-            <td class="item-price">850$</td>
-            <td class="item-varient">150$</td>
-            <td class="item-released">1000$</td>
-        </tr>
-        <tr>
-            <td class="item-price">Sunday</td>
-            <td class="item-price">30th March, 2018</td>
-            <td class="item-price">850$</td>
-            <td class="item-varient">150$</td>
-            <td class="item-released">1000$</td>
+            <td class="item-price">RAFT INC</td>
+            <td class="item-price">115</td>
+            <td class="item-price">345000$</td>
+            <td class="item-price">500000$</td>
+            <td class="item-price">4500$</td>
+            <td class="item-price">5000$</td>
         </tr>
         <tr >
             <td class="item-price"></td>
@@ -164,6 +134,7 @@
             <td class="item-price"></td>
             <td class="item-varient"></td>
             <td ></td>
+            <td></td>
         </tr>
         <tr >
             <td class="item-price"></td>
@@ -171,21 +142,18 @@
             <td class="item-price"></td>
             <td class="item-varient"></td>
             <td ></td>
+            <td></td>
         </tr>
+
         <tr class="table-success">
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td class="item-released" style="color: green;">Total: 5600$</td>
+            <td class="item-price" style="color: green;">Total</td>
+            <td class="item-price" style="color: green;">120</td>
+            <td class="item-price" style="color: green;">36400000$</td>
+            <td class="item-varient" style="color: green;">5040000$</td>
+            <td class="item-released"></td>
+            <td class="item-released" style="color: red;" >5000$</td>
         </tr>
-        <tr class="table-danger">
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td class="item-released" style="color: red;">Due: 3400$</td>
-        </tr>
+
         </tbody>
     </table><!-- .data-list -->
 

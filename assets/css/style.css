@@ -52,7 +52,7 @@ label {
 	background: #fff;
 	z-index: 10;
 	height: 75px;
- 	padding-left: 250px;
+ 	padding-left: 18%;
  	padding-right: 30px;
 	box-shadow: rgba(0, 0, 0, 0.5) 0 1px 15px -8px;
 }
@@ -182,7 +182,7 @@ label {
 .header-addon {
 	position: fixed;
 	background: #fff;
-	padding-left: 220px;
+	padding-left: 16%;
 	left: 0;
 	right: 0;
 	top: 75px;
@@ -293,7 +293,7 @@ label {
 	background: -webkit-linear-gradient(to top, #17252a, #3aa5a9);
 	background: -moz-linear-gradient(to top,#17252a, #3aa5a9);
 	background: linear-gradient(to top, #17252a, #3aa5a9);
-	width: 16%;
+	width: 15%;
 	overflow-y: scroll;
 }
 
@@ -488,6 +488,9 @@ label {
  */
 #page-area {
 	padding: 30px;
+	width: 85%;
+	float: right;
+	margin-right: 10%;
 }
 
 #page-area.has-header-addon {
@@ -537,8 +540,10 @@ label {
 
 .widget-list li p {
 	margin: 0;
-	color: #47d646;
+	color: 	#3aaf6f;
 	font-family: "Roboto Slab", "Times New Roman", serif;
+	font-weight: 700;
+	font-size: 18px;
 }
 
 .widget-list li .left {
@@ -562,7 +567,7 @@ label {
 
 .weekly-sales .widget-inner .weekly-sales-chart {
 	height: 100%;
-	min-height: 250px;
+	min-height: 350px;
 }
 
 .weekly-sales .tax-toggle {
@@ -575,7 +580,7 @@ label {
 .nav-pills .nav-item i {
 	display: inline-block;
 	padding: 0 10px 0 0;
-	font-size: 1.6em;
+	font-size: 3.0em;
 }
 
 .nav-tabs, .nav-pills {
