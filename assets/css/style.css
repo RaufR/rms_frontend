@@ -293,7 +293,7 @@ label {
 	background: -webkit-linear-gradient(to top, #17252a, #3aa5a9);
 	background: -moz-linear-gradient(to top,#17252a, #3aa5a9);
 	background: linear-gradient(to top, #17252a, #3aa5a9);
-	width: 15%;
+	width: 13%;
 	overflow-y: scroll;
 }
 
@@ -488,7 +488,7 @@ label {
  */
 #page-area {
 	padding: 30px;
-	width: 100%;
+	width: 98%;
 	float: right;
 
 }
