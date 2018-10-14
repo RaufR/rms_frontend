@@ -56,7 +56,7 @@
 		<div class="main-nav">
 			<ul>
 				<li>
-					<a href="index.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
+					<a href="dashboard.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
 				</li>
 				<li>
 					<a href="products.html" class="btn btn-link"><i class="material-icons">archive</i>Products</a></li>
@@ -392,7 +392,32 @@
 										<option>Tax Only</option>
 									</select>
 								</label>
-								<button class="btn btn-sm" style="background-color: #17252a"><i class="fa fa-tags"></i> Discount</button>
+								<button data-toggle="modal" data-target="#discount-modal" class="btn btn-sm" style="background-color: #17252a"><i class="fa fa-tags"></i> Discount</button>
+								<!-- Modal -->
+								<div class="modal fade" id="discount-modal" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header ">
+												<h4 class="modal-title">Order Discount</h4>
+											</div>
+											<div class="modal-body">
+												<label>Discount percentage</label><br>
+												<input placeholder="% of discount">
+
+											</div>
+											<div class="modal-footer" style="text-align: center">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+												<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+
+
 							</div><!-- .cart-footer-row -->
 							<div class="cart-footer-row equal">
 								<button class="btn  btn-lg" style="background-color: #2b7a78;><i class="fa fa-truck"></i> Shipping</button>

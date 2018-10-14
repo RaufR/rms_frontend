@@ -107,15 +107,18 @@ label {
 	position: absolute;
 	background: #fff;
 	padding: 15px;
-	border-radius: 3px;
-	box-shadow: rgba(0, 0, 0, 0.45) 0 1px 6px -2px;
+	border-radius: 5px;
+	box-shadow: #2b7a78 4px 2px 12px 0px;
 	right: 0;
 	top: 100%;
-	width: 135px;
-	transform-origin: top right;
-	transition: all ease 0.25s;
+	left: 50%;
+	width: max-content;
+	transform-origin: top left;
+	transition: all ease 0.45s;
 	transform: scale(0);
 }
+
+
 
 #top-header .filter-menu .filter-popup.open {
 	transform: none;

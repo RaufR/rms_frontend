@@ -28,8 +28,38 @@
 		<div class="filter-menu">
 			<a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
 			<div class="filter-popup">
-				<label><input type="checkbox"> Sales</label>
-				<label><input type="checkbox"> Reversal</label>
+				<div>
+					<label> Category</label>
+					<button class="btn btn-default" data-toggle="dropdown">Select Category<i style="margin-left: 5px;" class="fa fa-caret-down"></i></button>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a  class="dropdown-item" href="#"> <label><input type="checkbox" class="tick-this"></label>Food </a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Drink</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Clothings</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Electronics</a>
+					</div><!-- .dropdown-menu -->
+				</div>
+				<div>
+					<label> Varient</label>
+					<button class="btn btn-default" data-toggle="dropdown">Select Varients<i style="margin-left: 5px;" class="fa fa-caret-down"></i></button>
+					<div class="dropdown-menu dropdown-menu-right dropdown">
+						<a  class="dropdown-item" href="#"> <label><input type="checkbox" class="tick-this"></label>Foods/Vegetable</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Drink/Large</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Clothings/Men</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#"><label><input type="checkbox" class="tick-this"></label>Electronics/Phones</a>
+					</div><!-- .dropdown-menu -->
+				</div>
+
+				<button id="btnFilter" style="float: right;" class="btn  btn-primary">Search</button>
+
+
+
+
 			</div><!-- .filter-popup -->
 		</div><!-- .filter-menu -->
 
@@ -64,7 +94,7 @@
 		<div class="main-nav">
 			<ul>
 				<li>
-					<a href="index.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
+					<a href="dashboard.html" class="btn btn-link"><i class="material-icons">dashboard</i>Dashboard</a>
 				</li>
 				<li class="active">
 					<a href="products.html" class="btn btn-link"><i class="material-icons">archive</i>Products</a></li>

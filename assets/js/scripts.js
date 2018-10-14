@@ -306,4 +306,18 @@
 		return num;
 	}
 
+
 })(jQuery);
+
+function login_function(userName, password) {
+
+    var userNamestored = ["solsersoft"]; // array of valid user names
+    var passwordStored = ["123"]; //array of valid passwords
+
+    if (userName == userNamestored[0] && password == passwordStored[0]){
+        window.open("dashboard.html");
+    }
+    else{
+        alert("incorrect username or password!");
+    }
+}
