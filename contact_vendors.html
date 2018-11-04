@@ -18,17 +18,17 @@
 
 <header id="top-header">
 
-    <h2 class="page-title">Customer List..</h2>
+    <h2 class="page-title">Vendor List</h2>
 
     <div class="search-bar input-group">
-        <input type="search" class="ghost-placeholder" placeholder="Customer List...">
+        <input type="search" class="ghost-placeholder" placeholder="">
         <button type="submit"><i class="material-icons">search</i></button>
     </div><!-- .search-bar -->
 
     <div class="filter-menu">
         <a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
         <div class="filter-popup">
-            <label><button class="btn btn-link dropdown-submenu">Suppliers<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link dropdown-submenu">Vendors<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
             <label><button class="btn btn-link">Employees<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
             <label><button class="btn btn-link">Customer<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
             <button style="width: 100%" class="btn btn-outline-success">Search</button>
@@ -38,7 +38,7 @@
     <div class="action-buttons">
         <div class="btn-group" role="group" aria-label="...">
             <div>
-                <button class="btn"  style="background-color: #3aafa9; margin-right: 5px"> Daily Customer</button>
+                <button class="btn"  style="background-color: #3aafa9; margin-right: 5px"> Vendor Accounts</button>
             </div>
             <button class="btn"  style="background-color: #3aafa9"><i class="fa fa-download"></i> Import</button>
             <button class="btn "  style="background-color: #3aafa9" data-toggle="dropdown"><i class="fa fa-caret-down"></i></button>
@@ -47,7 +47,7 @@
                 <a class="dropdown-item" href="#">Import from CSV</a>
             </div><!-- .dropdown-menu -->
         </div><!-- .btn-group -->
-        <button class="btn btn-success"><i class="fa fa-plus"></i> Add Customer</button>
+        <button class="btn btn-success"><i class="fa fa-plus"></i> Vendor Account Opening</button>
     </div><!-- .action-buttons -->
 
 </header><!-- #top-header -->
@@ -108,20 +108,10 @@
 
 
 <div id="page-area" class="has-header-addon">
-    <div class="header-addon">
-        <ul class="left-menu">
-            <li class="active"><a href="#">Customers</a></li>
-            <li ><a href="#">Suppliers</a></li>
-        </ul><!-- .left-menu -->
-
-        <ul class="right-menu">
-            <li><a href="#"><i class="fa fa-bars"></i></a></li>
-
-        </ul><!-- .right-menu -->
         <div class="header-addon">
             <ul class="left-menu">
-                <li class="active"><a href="#">Customers</a></li>
-                <li ><a href="contact_vendors.html">Vendors</a></li>
+                <li ><a href="contacts.html">Customers</a></li>
+                <li class="active"><a href="contact_vendors.html">Vendors</a></li>
             </ul><!-- .left-menu -->
 
             <ul class="right-menu">
@@ -134,125 +124,65 @@
         <thead>
         <tr>
             <th class="item-ticker"><label><input type="checkbox" class="tick-all"></label></th>
-            <th class="item-title">Name</th>
+            <th class="item-price">Company Name</th>
             <th class="item-code">Code</th>
             <th class="item-category">Phone</th>
-            <th class="item-variants">Mobile</th>
-            <th class="item-price">Email</th>
-            <th class="item-released">Location</th>
+            <th class="item-price">Location</th>
+            <th class="item-released">Products</th>
+            <th class="item-released">Due</th>
+
         </tr>
         </thead>
         <tbody>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
+            <td class="item-price"><a href="#"><span class="title">Uniliver</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
+            <td class="item-code">U325</td>
+            <td class="item-category">+01785265585</td>
+            <td class="item-variants">Dhaka</td>
+            <td class="item-price">
+                <a class="btn btn-sm" href="products.html" style="background-color: lightgrey" >View</i></a>
+            </td>
+            <td class="item-released">15,000 BDT</td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">Rauf Rahman</span></a>
+            <td class="item-price"><a href="#"><span class="title">Pran</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">15875</td>
-            <td class="item-category">+45564452</td>
-            <td class="item-variants">+545125252</td>
-            <td class="item-price">rauf@gmail.com</td>
-            <td class="item-released">Prague, Czech Republic</td>
+            <td class="item-code">P325</td>
+            <td class="item-category">+01865000585</td>
+            <td class="item-variants">Khulna</td>
+            <td class="item-price">
+                <a class="btn btn-sm" href="products.html" style="background-color: lightgrey" >View</i></a>
+            </td>
+            <td class="item-released">2,000 BDT</td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">Refat Alam</span></a>
+            <td class="item-price"><a href="#"><span class="title">Kauland</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">18952</td>
-            <td class="item-category">+656282230</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">refat@gmail.com</td>
-            <td class="item-released">Chittagong, Bangladesh</td>
+            <td class="item-code">K325</td>
+            <td class="item-category">+04505265585</td>
+            <td class="item-variants">Berlin</td>
+            <td class="item-price">
+                <a class="btn btn-sm" href="products.html" style="background-color: lightgrey" >View</i></a>
+            </td>
+            <td class="item-released">7500 EURO</td>
         </tr>
         <tr>
             <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">Tuhin Houque</span></a>
+            <td class="item-price"><a href="#"><span class="title">Uniliver</span></a>
             </td><!-- .item-title -->
-            <td class="item-code">48451213</td>
-            <td class="item-category">+88055656565</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">tuhin@gmail.com</td>
-            <td class="item-released">Khulna, Bangladesh</td>
+            <td class="item-code">U325</td>
+            <td class="item-category">+01785265585</td>
+            <td class="item-variants">Dhaka</td>
+            <td class="item-price">
+                <a class="btn btn-sm" href="products.html" style="background-color: lightgrey" >View</i></a>
+            </td>
+            <td class="item-released">15,000 BDT</td>
         </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">Kamil Dusak</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">++420585665</td>
-            <td class="item-variants">+556565</td>
-            <td class="item-price">kamil@gmail.com</td>
-            <td class="item-released">Prague, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
-        <tr>
-            <td class="item-ticker"><label><input type="checkbox" class="tick-this"></label></td>
-            <td class="item-title">
-                <a href="#"><span class="title">John peter</span></a>
-            </td><!-- .item-title -->
-            <td class="item-code">15445</td>
-            <td class="item-category">+420777824557</td>
-            <td class="item-variants">+12584552</td>
-            <td class="item-price">john@gmail.com</td>
-            <td class="item-released">NewYork, USA</td>
-        </tr>
+
         </tbody>
     </table><!-- .data-list -->
     <nav class="data-pagination">

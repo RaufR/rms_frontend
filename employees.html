@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport" />
 
-    <title>DEBT</title>
+    <title>Contacts</title>
 
     <!-- Fonts and icons -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -18,23 +18,36 @@
 
 <header id="top-header">
 
-    <h2 class="page-title">Accounts Payable</h2>
+    <h2 class="page-title">Staff...</h2>
+
+    <div class="search-bar input-group">
+        <input type="search" class="ghost-placeholder" placeholder="Employee List...">
+        <button type="submit"><i class="material-icons">search</i></button>
+    </div><!-- .search-bar -->
 
     <div class="filter-menu">
         <a href="#" class="opener btn btn-link"><i class="fa fa-filter"></i></a>
         <div class="filter-popup">
-            <label><button class="btn btn-link dropdown-submenu">Suppliers<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
-            <label><button class="btn btn-link">Employees<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
-            <label><button class="btn btn-link">Customer<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link dropdown-submenu">Filter by Performance<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link">Filter by Salary<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
+            <label><button class="btn btn-link">Filter by Absence<i style="margin-left: 15px" class="fa fa-caret-right"></i></button></label>
             <button style="width: 100%" class="btn btn-outline-success">Search</button>
         </div><!-- .filter-popup -->
     </div><!-- .filter-menu -->
 
     <div class="action-buttons">
         <div class="btn-group" role="group" aria-label="...">
-            <button class="btn " style="background-color: #3aafa9"><i class="fa fa-upload"></i> Export</button>
+            <div>
+                <button class="btn"  style="background-color: #3aafa9; margin-right: 5px"> Staff payment</button>
+            </div>
+            <button class="btn"  style="background-color: #3aafa9"><i class="fa fa-download"></i>  Action </button>
+            <button class="btn "  style="background-color: #3aafa9" data-toggle="dropdown"><i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Login/Logout Entry</a>
+                <a class="dropdown-item" href="#">Attendance Report</a>
+            </div><!-- .dropdown-menu -->
         </div><!-- .btn-group -->
-        <button class="btn btn-success"> View  Details</button>
+        <button class="btn btn-success"><i class="fa fa-plus"></i> Add Staff</button>
     </div><!-- .action-buttons -->
 
 </header><!-- #top-header -->
@@ -54,7 +67,7 @@
                 <a href="products.html" class="btn btn-link"><i class="material-icons">archive</i>Products</a></li>
             <li>
                 <a href="sell.html" class="btn btn-link"><i class="material-icons">pie_chart</i>Sales</a></li>
-            <li >
+            <li>
                 <a href="reports.html" class="btn btn-link"><i class="material-icons">multiline_chart</i>Reports</a>
             </li>
             <li >
@@ -66,7 +79,7 @@
             <li>
                 <a href="payment.html" class="btn btn-link"><i class="material-icons">monetization_on</i>Payment</a>
             </li>
-            <li class="active">
+            <li>
                 <a href="debt.html" class="btn btn-link"><i class="material-icons">attach_money</i>DEBT</a>
             </li>
             <li>
@@ -78,7 +91,7 @@
             <li>
                 <a href="delivery.html" class="btn btn-link"><i class="material-icons">commute</i>Delivery</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="employees.html" class="btn btn-link"><i class="material-icons">group</i>Employees</a>
             </li>
             <li>
@@ -91,75 +104,62 @@
     </div><!-- .main-nav -->
 </nav><!-- #side-nav -->
 
+
+
+
 <div id="page-area" class="has-header-addon">
-    <div class="header-addon">
-        <ul class="left-menu">
-            <li ><a href="#">Account Receivable</a></li>
-            <li class="active"><a href="#">Account Payable</a></li>
-
-        </ul><!-- .left-menu -->
-        <ul class="right-menu">
-            <li><a href="#"><i class="fa fa-bars"></i></a></li>
-        </ul><!-- .right-menu -->
-    </div><!-- .header-addon -->
-    <table class="data-list table-hover ">
+    <table class="data-list">
         <thead>
-        <tr class="table-primary">
-            <th class="item-title">SUPPLIER</span></th>
-            <th class="item-title">COUNT</span></th>
-            <th class="item-title">iNVOICE</span></th>
-            <th class="item-title">PAID</span></th>
-            <th class="item-title">CREDIT</span></th>
-            <th class="item-title">LIMIT</span></th>
-
+        <tr>
+            <th class="item-title">Name</th>
+            <th class="item-code">Address</th>
+            <th class="item-category">Salary/Month</th>
+            <th class="item-variants">Phone</th>
+            <th class="item-variants">Position</th>
+            <th class="item-price">Shift</th>
+            <th class="item-released">Advance payed</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="item-price">Rm Warehouse</td>
-            <td class="item-price">5</td>
-            <td class="item-price">24000$</td>
-            <td class="item-price">40000$</td>
-            <td class="item-price">20000$</td>
-            <td class="item-price">0$</td>
+            <td class="item-title">
+                <a href="#">
+                    <img src="assets/img/face.jpg"  style="height: 80px; width: 80px;" alt="">
+                    <span class="title">aroni jahan</span>
+                </a>
+            </td>
+            <td class="item-code">315/7 banani, dhaka</td>
+            <td class="item-category">7,000 BDT</td>
+            <td class="item-variants">+12584552</td>
+            <td class="item-price">SalesMan</td>
+            <td class="item-released">Day(8am-4pm)</td>
+            <td class="item-released">1200 BDT</td>
         </tr>
         <tr>
-            <td class="item-price">RAFT INC</td>
-            <td class="item-price">115</td>
-            <td class="item-price">345000$</td>
-            <td class="item-price">500000$</td>
-            <td class="item-price">4500$</td>
-            <td class="item-price">5000$</td>
+            <td class="item-title">
+                <a href="#">
+                    <img src="assets/img/face2.jpg"  style="height: 80px; width: 80px;" alt="">
+                    <span class="title">Faisal Hasan</span>
+                </a>
+            </td>
+            <td class="item-code">12012 uttara, dhaka</td>
+            <td class="item-category">15,000 BDT</td>
+            <td class="item-variants">+454845</td>
+            <td class="item-price">Manager</td>
+            <td class="item-released">Day(7am-09pm)</td>
+            <td class="item-released">3500 BDT</td>
         </tr>
-        <tr >
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td ></td>
-            <td></td>
-        </tr>
-        <tr >
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-price"></td>
-            <td class="item-varient"></td>
-            <td ></td>
-            <td></td>
-        </tr>
-
-        <tr class="table-success">
-            <td class="item-price" style="color: green;">Total</td>
-            <td class="item-price" style="color: green;">120</td>
-            <td class="item-price" style="color: green;">36400000$</td>
-            <td class="item-varient" style="color: green;">5040000$</td>
-            <td class="item-released"></td>
-            <td class="item-released" style="color: red;" >5000$</td>
-        </tr>
-
         </tbody>
     </table><!-- .data-list -->
-
+    <nav class="data-pagination">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item.active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul><!-- .pagination -->
+    </nav><!-- .data-pagination -->
 </div><!-- #page-area -->
 
 <!--   Core JS Files   -->

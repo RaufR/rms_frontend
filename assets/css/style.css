@@ -905,6 +905,7 @@ input[type="checkbox"]:checked {
 
 .data-list th, .data-list td {
 	padding: 10px 15px;
+	width: 250px;
 }
 
 .data-list .item-ticker label {
@@ -948,13 +949,14 @@ input[type="checkbox"]:checked {
 
 .data-list .item-title a {
 	display: table;
+	width: max-content;
 
 }
 
 .data-list .item-title a img {
 	display: table-cell;
 	vertical-align: middle;
-	width: 30px;
+	width: 25px;
 }
 
 .data-list .item-title a .title {
